@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<root>
+  <devicevendordef>
+    <vendorname>WASD_KEYBOARDS</vendorname>
+    <vendorid>0x04d9</vendorid>
+  </devicevendordef>
+  <deviceproductdef>
+    <productname>WASD_MECHANICAL_KEYBOARD</productname>
+    <productid>0x0269</productid>
+  </deviceproductdef>
+  <list>
+    <item>
+      <name>Remap Music Play Keys</name>
+      <appendix>Previous, Play/Pause, Next</appendix>
+      <identifier>remap.musickeys</identifier>
+      <device_only>DeviceVendor::WASD_KEYBOARDS,DeviceProduct::WASD_MECHANICAL_KEYBOARD</device_only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::F9,
+        ConsumerKeyCode::MUSIC_PREV
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::F10,
+        ConsumerKeyCode::MUSIC_PLAY
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::F11,
+        ConsumerKeyCode::MUSIC_NEXT
+      </autogen>
+    </item>
+    <item>
+      <name>Remap Brightness to External Display</name>
+      <appendix>Brightness Up, Brightness Down</appendix>
+      <identifier>remap.brightness_displays</identifier>
+      <device_only>DeviceVendor::WASD_KEYBOARDS,DeviceProduct::WASD_MECHANICAL_KEYBOARD</device_only>
+      <autogen>
+        __KeyToKey__
+        KeyCode::F1, ModifierFlag::CONTROL_L,
+        ConsumerKeyCode::BRIGHTNESS_DOWN
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::F2, ModifierFlag::CONTROL_L,
+        ConsumerKeyCode::BRIGHTNESS_UP
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::F1,
+        ConsumerKeyCode::BRIGHTNESS_DOWN, ModifierFlag::CONTROL_L
+      </autogen>
+      <autogen>
+        __KeyToKey__
+        KeyCode::F2,
+        ConsumerKeyCode::BRIGHTNESS_UP, ModifierFlag::CONTROL_L
+      </autogen>
+    </item>
+  </list>
+</root>
